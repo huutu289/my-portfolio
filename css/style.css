@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+    text-transform: uppercase;
+}
+.left-nav{
+    display: flex;
+}
+.nav-wrapper > .left-nav > div{
+    margin-right: 20px;
+}
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+.nav-link-wrapper a
+{
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.nav-link-wrapper:hover{
+    border-bottom: 1px solid black;    
+}
+.nav-link-wrapper a:hover{
+    color:  black;    
+}
+
+/* portfolio */
+
+.portfolio-items-wrapper{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.portfolio-item-wrapper{
+    position: relative;
+}
+
+.portfolio-img-background{
+    height: 350px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.img-text-wrapper{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    padding: 0;
+}
+.logo-wrapper img {
+    height: 50px;
+    margin-bottom: 20px;
+}
+.img-text-wrapper .subtitle{
+    color: transparent;
+    font-weight: 600;
+    transition: 0.2s;
+}
+.img-text-wrapper:hover .subtitle{
+    /* filter: brightness(10%); */
+    font-weight: 600;
+    color: lightseagreen;
+}
+.image-blur{
+    transition: 0.3s;
+    filter: brightness(10%);
+    /* opacity: 0.3; */
+}
+.active-nav-link {
+    border-bottom: 1px solid black;
+}
+.active-nav-link a {
+    color: black !important;
+}
+.right-nav .brand{
+    box-shadow: 1px 1px 2px #333;
+    padding: 10px;
+    color: lightskyblue;
+}
+/* about page */
+.two-column-layout-wrapper{
+    display: grid;    
+    grid-template-columns: 1fr 1fr;
+
+}
+.profile-image-wrapper img{
+    width: 100%;
+}
+.profile-content-wrapper{
+    padding: 30px;
+}
+.profile-content-wrapper h1{
+    color: lightseagreen;
+}
