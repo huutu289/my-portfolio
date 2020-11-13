@@ -42,6 +42,7 @@ body{
 }
 .portfolio-item-wrapper{
     position: relative;
+    margin: 0 2px;
 }
 
 .portfolio-img-background{
@@ -101,9 +102,40 @@ body{
 .profile-image-wrapper img{
     width: 100%;
 }
+.fcontent-wrapper{
+    padding: 0 5px;
+}
 .profile-content-wrapper{
+
     padding: 30px;
 }
 .profile-content-wrapper h1{
     color: lightseagreen;
+}
+
+/* tablet and screen solution < 1023px */
+@media only screen and (min-width: 740px) and (max-width: 1023px)
+{
+    .portfolio-items-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* PC that low screen solution  */
+@media only screen and (min-width: 1024px) and (max-width: 1239px)
+{
+    .portfolio-items-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }  
+}
+
+/* screen solution > 740px */
+@media only screen and (max-width: 740px)
+{
+    .portfolio-items-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
